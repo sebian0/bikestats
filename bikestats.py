@@ -7,7 +7,7 @@ import datetime
 # import froms
 from openpyxl import Workbook
 #load
-Workbook_obj = openpyxl.load_workbook(r"C:\Users\spenc\Documents\bikestats\bikestats.xlsx")
+Workbook_obj = openpyxl.load_workbook(r"<full file path to excel sheet.xlsx>")
 sheet_obj = Workbook_obj.active
 #Date/Time data
 DATE = input("Date: ")
@@ -26,5 +26,5 @@ HTRATE = input("Average Heartrate ")
 col4 = HTRATE
 
 sheet_obj.append([col1, col2, col3, col4])
-Workbook_obj.save("C:/Users/spenc/Documents/bikestats/bikestats.xlsx")
+Workbook_obj.save("<full file path to excel sheet.xlsx>")
 
